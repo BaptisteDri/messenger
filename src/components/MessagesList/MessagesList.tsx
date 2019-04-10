@@ -9,8 +9,15 @@ interface MessagesListProps {
 interface MessagesListStates {}
 
 export default class MessagesList extends Component<MessagesListProps, MessagesListStates> {
+    lastMessage = React.createRef<HTMLDivElement>()
     constructor (props: MessagesListProps) {
         super(props)
+    }
+
+    componentDidUpdate() {
+        if(this.lastMessage.current != null) this.lastMessage.current.scrollIntoView({
+            behavior: 'auto'
+        })
     }
 
     render() {
@@ -38,16 +45,7 @@ export default class MessagesList extends Component<MessagesListProps, MessagesL
                         </div>
                     )
                 }
-                    {/* <div>
-                        <div>
-                            <div className="logout">
-                                test left the room
-                            </div>
-                            <div className="login">
-                                test joined the room
-                            </div>
-                        </div>
-                    </div> */}
+                <div ref={this.lastMessage}></div>
             </div>
         )
     }

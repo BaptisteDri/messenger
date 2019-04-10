@@ -1,7 +1,7 @@
 .messages-list-container {
-    height: 94%;
-    max-height: 94%;
-    overflow: scroll;
+    height: 90%;
+    max-height: 90%;
+    overflow: auto;
 }
 .messages-list-container .extern, .messages-list-container .intern{
     clear: both;
@@ -9,6 +9,8 @@
     padding: 10px 13px;
     width: fit-content;
     box-shadow: 0px 1px 4px #888888;
+    max-width: 50%;
+    word-wrap: break-word;
 }
 .messages-list-container .intern{
     background-color: #9b4dca;

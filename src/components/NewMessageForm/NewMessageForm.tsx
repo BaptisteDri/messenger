@@ -54,12 +54,6 @@ export default class NewMessageForm extends Component<NewMessageFormProps, NewMe
                         onChange={handleMessageContentChange}
                         onKeyDown={handleSendMessageValidation}
                     />
-                    {/* <button 
-                        className="button button-outline"
-                        onClick={() => handleSendMessage(messageContent)}
-                    >
-                    Send
-                    </button> */}
                 </fieldset>
             </div>
         )

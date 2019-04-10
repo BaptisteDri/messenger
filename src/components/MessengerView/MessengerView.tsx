@@ -35,7 +35,6 @@ export default class MessengerView extends Component<MessengerViewProps, Messeng
                     <NewMessageForm url={url} handleSendMessage={handleSendMessage} />
                 </div>
                 <div className="column column-25">
-                    {/* Tools */}
                     <UsersList users={users} />
                 </div>
             </div>
