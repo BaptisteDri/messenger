@@ -1,0 +1,6 @@
+.messenger-view-container{
+    height: 100vh;
+}
+.column:first-child{
+    border-right: 1px solid #606c76;
+}
